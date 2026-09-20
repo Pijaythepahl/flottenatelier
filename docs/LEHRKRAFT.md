@@ -10,8 +10,8 @@ Die Grundorganisation mit Basisausbildung und einfacher Landinfrastruktur gilt a
 
 | Generischer Baustein | Anzahl | Aufbau | Betrieb | Personal |
 |---|---:|---:|---:|---:|
-| Mehrzweckfregatte | 8 | 160 | 80 | 80 |
-| Luftverteidigungsfregatte | 3 | 72 | 33 | 30 |
+| Fregatte ohne Spezialisierung | 8 | 160 | 80 | 80 |
+| Fregatte mit Luftverteidigung | 3 | 72 | 33 | 30 |
 | Korvette | 5 | 50 | 25 | 25 |
 | U-Boot | 6 | 90 | 42 | 30 |
 | Minenabwehreinheit | 10 | 80 | 40 | 40 |
@@ -19,15 +19,15 @@ Die Grundorganisation mit Basisausbildung und einfacher Landinfrastruktur gilt a
 | Aufklärungsschiff | 3 | 33 | 15 | 15 |
 | Tender | 6 | 48 | 24 | 24 |
 | Flottentanker | 2 | 12 | 6 | 4 |
-| Bordhubschrauber-Paket, je 2 Maschinen | 11 | 66 | 44 | 33 |
-| Transport-/SAR-Paket, je 6 Maschinen | 3 | 21 | 12 | 9 |
-| Seefernaufklärung, Modellansatz 2 Maschinen | 1 | 13 | 7 | 6 |
+| Marinehubschrauber mit U-Boot-Jagd | 22 | 66 | 44 | 22 |
+| Marinehubschrauber ohne Spezialisierung | 18 | 27 | 13,5 | 18 |
+| Marineflächenflugzeug mit U-Boot-Jagd | 2 | 13 | 7 | 6 |
 | Führungsnetz | 1 | 8 | 4 | 5 |
 | Marinefliegerbasis | 1 | 8 | 5 | 6 |
-| **Summe** | | **697** | **355** | **325** |
+| **Summe** | | **703** | **356,5** | **323** |
 | **Startkontingent** | | **720** | **370** | **340** |
 
-Eine weitere Korvette führt zu 707 / 360 / 330 Punkten. Der automatisierte Test sichert beide Rechnungen. Die Referenz umfasst 46 Schiffe/Boote und zusätzliche Pakete.
+Eine weitere Korvette führt zu 713 / 361,5 / 328 Punkten. Der automatisierte Test sichert beide Rechnungen. Die Referenz umfasst 46 Schiffe/Boote, 42 einzelne bemannte Luftfahrzeuge und zwei Strukturen.
 
 Die Zuordnung von F123 und F125 zu einer Karte dient ausschließlich der groben Ressourcenrechnung. Keine Gleichsetzung der realen Fähigkeiten. Der P-8A-Ansatz ist eine Modellannahme und keine Aussage über eine bestätigte tagesgenaue Flugzeugzahl. 22 veröffentlichte Sea Lynx und 18 ausgelieferte Sea Lion liefern eine strukturelle Orientierung. Sea Tiger werden während des Ersatzes nicht zusätzlich pauschal eingerechnet. Die fünf Korvetten sind der dokumentierte Bestand des ersten Loses. Vor dem Seminareinsatz Zulauf und Marinefliegerbestand erneut prüfen.
 
@@ -66,3 +66,13 @@ Ein großer Träger, seine Luftgruppe, Marinefliegerbasis, Führungsnetz, zwei M
 Erst Entwürfe begründen lassen, dann Realbild nach Bestand, Verfügbarkeit, Zulauf und Planung trennen. Für eine zweite Runde zwei zusätzliche Bedingungen mündlich vorgeben; die Gruppen dokumentieren sie in ihren Annahmen. Ressourcenlimits bleiben dabei unverändert, sofern nicht der Katalog bewusst für einen neuen Durchgang geändert wird.
 
 Diskussionsfragen: Welche Aufgaben wurden priorisiert? Welche Fähigkeiten fehlen bewusst? Wie wirken Wartung und Ausfall großer Einzelplattformen? Welche Unterstützung wird vorausgesetzt? Was erklärt den Unterschied zur realen Marine: Auftrag, Geschichte, Personal, Geld, Industrie, Bündnisarbeitsteilung oder Politik? Wie wird aus dem Fähigkeitsbedarf eine realisierbare Ausstattung? Letztere Frage führt zum PBN-Anschluss.
+
+## Modellversion 2: Plattform und Spezialisierung
+
+Korvette: ein Platz (keine Luftverteidigung); Fregatte: zwei; großes Kampfschiff: drei. Bemanntes Luftfahrzeug: zwei; Drohnensystem: einer. Grundplattformen sind nicht unbewaffnet. Alle Modulpreise sind didaktisch gesetzt und benötigen keine zusätzlichen Personalpunkte. Die Namen Zerstörer/Kreuzer sind keine weltweit einheitliche Größenklassifikation.
+
+Ein bemanntes Luftfahrzeug entspricht genau einer Karte. Drohnen sind Systempakete mit Betreuung; die Trägerluftgruppe bleibt ein Gesamtpaket. Kein Doppelzählen ihrer enthaltenen Luftfahrzeuge. SAR bei Drohnen bedeutet Suchunterstützung, keine Personenaufnahme. Drehflüglerdrohnen mit U-Boot-Jagd unterstützen Suche und Ortung. Bewaffnete Drohnen sind abstrakte Optionen, keine Zusicherung realer Systemleistungen.
+
+Einschiffungsgrenzen sind Spielannahmen: zwei Hubschrauber je Fregatte/großem Kampfschiff, sechs je Versorgungsschiff, zwölf je amphibischem Hubschrauberträger sowie jeweils ein Drehflüglerdrohnensystem. Marineinfanterie kann unabhängig an Land bestehen; eingeschifft braucht sie ein eigenes Logistikpaket.
+
+Die alte Referenzrechnung 697 / 355 / 325 bleibt für historische Abgaben gültig. Das neue Modell rechnet in ganzzahligen Viertelpunkten; sichtbare Punkte werden durch vier geteilt. Die leichten Änderungen der Luftfahrtkosten sind beabsichtigt und ändern den Ressourcenrahmen nicht.

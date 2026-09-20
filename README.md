@@ -28,10 +28,10 @@ Die Dateien lassen sich ebenso auf jedem statischen Webserver veröffentlichen.
 
 ## Funktionsumfang
 
-- 24 Karten mit Beiträgen, Grenzen, Mengenbeschreibungen und getrennten Ressourcenwerten.
+- 23 Grundkarten mit Beiträgen, Grenzen, Mengenbeschreibungen und getrennten Ressourcenwerten.
 - Startkontingent: **720 Aufbau / 370 Betrieb / 340 Personal**.
 - Suche, Kategoriefilter, Hinzufügen über Plus oder Drag-and-drop, Flottenstapel und Mengenänderungen.
-- Verbindliche Voraussetzungen, exklusive Paketplätze, eigene Logistik je Marineinfanterie-Paket und Umordnung einzelner Pakete.
+- Spezialisierungen für Kampfschiffe und Marineflieger, Einzelzählung bemannter Luftfahrzeuge, Einschiffungskapazitäten und landgestützte Marineinfanterie. Expeditionäre Logistik wird erst bei Einschiffung verlangt.
 - Rückgängig für Entwurfsänderungen; Überschreitung im Entwurf erlaubt, Abgabe dann gesperrt.
 - Vier Begründungsfragen, unveränderliche Abgabestände und separate Überarbeitungen.
 - Lokale Speicherung, validierter JSON-Export/-Import und Druckansicht einschließlich Zuordnungen.
@@ -63,4 +63,12 @@ Ressourcen und Regeln können zentral im Katalog angepasst werden. Bei inkompati
 
 ## Repository und Veröffentlichungsstatus
 
-Repository: https://github.com/Pijaythepahl/flottenatelier (privat). GitHub hat am 20.09.2026 die Aktivierung von Pages für dieses private Repository aufgrund des aktuellen Kontotarifs abgelehnt. Der Pages-Workflow bleibt daher deaktiviert. Ein unterstützter Tarif oder eine bewusst gewählte öffentliche Repository-Sichtbarkeit ist Voraussetzung für die Aktivierung. Die lokale Anwendung funktioniert unabhängig davon.
+Repository: https://github.com/Pijaythepahl/flottenatelier (öffentlich). Die Veröffentlichung auf GitHub Pages wurde vom Eigentümer am 20.09.2026 nach den Tests freigegeben. Zieladresse: https://pijaythepahl.github.io/flottenatelier/. Der Workflow prüft den Code und alle Tests vor jeder Veröffentlichung.
+
+## Modellversion 2 und alte Entwürfe
+
+Neue Daten liegen unter `flottenatelier.v2`. Beim ersten Laden wird ein vorhandener v1-Stand validiert, vor der Umstellung unter einem datierten Backup-Schlüssel gesichert und als v2 gespeichert. Der ursprüngliche v1-Schlüssel bleibt erhalten. Alte Importdateien werden ebenfalls gesichert. Bereits abgegebene Stände verwenden dauerhaft den eingefrorenen v1-Katalog; erst die Überarbeitung wird migriert. Bei einem Fehler bleibt die Quelle erhalten. Backups bleiben lokal und können über die Browser-Entwicklerwerkzeuge unter Application/Local Storage als JSON gesichert werden.
+
+`catalog.js` speichert Kosten in ganzzahligen Viertelpunkten, Limits bleiben sichtbare Punkte. `unitCost()` und `totals()` liefern sichtbare Punkte. Änderungen an Einheitenausstattung laufen durch `setModules()`; `assignUnit()` übernimmt Plattform und Logistik gemeinsam. `groupUnits()` gruppiert identische Ausstattungen. Die eingefrorenen Dateien `catalog-v1.js` und `engine-v1.js` dürfen nicht an neue Regeln angepasst werden.
+
+Die Miniaturen liegen lokal unter `dist/assets/`; Generierung und Prompts sind in `docs/MINIATUREN.md` dokumentiert. Es gibt keine externe Bildabfrage zur Laufzeit.
