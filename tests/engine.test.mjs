@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {CATALOG,QUESTIONS} from '../dist/catalog.js';
-import * as E from '../dist/engine.js';
+import {CATALOG,QUESTIONS} from '../dist/catalog-v2.js';
+import * as E from '../dist/engine-v2.js';
 import * as V1 from '../dist/engine-v1.js';
 const add=(s,id,n=1,modules=[])=>{for(let i=0;i<n;i++)s=E.addUnit(s,id,{modules});return s;};
 const ready=s=>{s=E.copy(s);s.draft.name='Test';for(const [k]of QUESTIONS)s.draft.rationale[k]='Begründung';return s;};

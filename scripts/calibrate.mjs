@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import * as current from '../dist/engine.js';
+import * as previous from '../dist/engine-v3.js';
+import {LIMITS} from '../dist/catalog.js';
+import {REFERENCE_DATE,REFERENCE_ROWS,buildReference,independentReference} from './calibration-reference.mjs';
+const expected=independentReference(),state=buildReference(current),old=buildReference(previous);
+const actual=current.totals(state.draft.units);
+assert.deepEqual(actual,expected.total,'Unabhängige Zeilenrechnung und Spielrechnung müssen übereinstimmen.');
+assert.equal(state.draft.units.filter(u=>u.type==='harbor').length,expected.harborCount);
+assert.equal(state.draft.units.filter(u=>u.type==='airbase').length,expected.airbaseCount);
+const margin=Object.fromEntries(Object.keys(LIMITS).map(k=>[k,LIMITS[k]-actual[k]]));
+assert.ok(Object.values(margin).every(n=>n>=0),'Referenz einschließlich Infrastruktur muss finanzierbar sein.');
+console.log(JSON.stringify({date:REFERENCE_DATE,scope:'2026 stress envelope; transition aircraft are not a verified active inventory',previous:previous.totals(old.draft.units),current:actual,limits:LIMITS,margin,infrastructure:current.infrastructureUsage(state.draft.units),rows:REFERENCE_ROWS.map(([label,type,count,modules,price])=>({label,type,count,modules,price}))},null,2));
